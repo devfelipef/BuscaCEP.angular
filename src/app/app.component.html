@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="formulario">
+    <div>
+      <img src="https://cdn-icons-png.flaticon.com/512/1527/1527531.png" alt="">
+    </div>
+      <div class="actions">
+        <h1>Pesquisar CEP</h1>
+        <input [(ngModel)]="cep" type="text">
+        <button (click)="pesquisarCep()">Pesquisar</button>
+    </div>
+    <div class="texts">
+      <h3> Logradouro: {{cepData.logradouro}} </h3>
+      <h3> Bairro: {{cepData.bairro}} </h3>
+      <h3> Cidade: {{cepData.localidade}} </h3>
+      <h3> Estado: {{cepData.uf}} </h3>
+
+    </div>
+  </div>
+</div>
+
